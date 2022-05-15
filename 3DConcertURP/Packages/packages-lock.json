@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.dbrizov.naughtyattributes": {
-      "version": "file:D:/Projects/Unity Package/NaughtyAttributes",
+      "version": "file:D:/Projects/3DConcert/3DConcertURP/Assets/NaughtyAttributes",
       "depth": 0,
       "source": "local",
       "dependencies": {}
