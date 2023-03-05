@@ -1,8 +1,7 @@
 Library\Bee\artifacts\movedfrom\Unity.Burst.Editor.ref.dll_16355153736048737481.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Burst.ref.dll_17513929544495339880.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Collections.Editor.ref.dll_16449712755471922356.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Collections.ref.dll_7308625386244447949.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Jobs.Editor.ref.dll_15958590529561083709.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Jobs.ref.dll_7140872185176801204.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Mathematics.Editor.ref.dll_11106105192880348995.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Mathematics.ref.dll_16784875247615350606.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.PlasticSCM.Editor.ref.dll_2700729535869450326.movedfrom
@@ -38,7 +37,7 @@ Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_2960688725779722425.mo
 Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_4641226757004833340.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_16559861824719753692.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_8706188598504237399.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Collections.LowLevel.ILSupport.dll_3585516324198325022.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Collections.LowLevel.ILSupport.dll_12711180584659498302.movedfrom
 Library\Bee\artifacts\movedfrom\Unity.VisualScripting.Antlr3.Runtime.dll_4936599849638293447.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.CoreModule.dll_12239262809740713174.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.DeviceSimulatorModule.dll_7636457881684468427.movedfrom
