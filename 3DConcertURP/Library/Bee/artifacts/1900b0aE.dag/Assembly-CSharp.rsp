@@ -117,8 +117,8 @@
 -r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
 -r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.burst@1.6.6/Unity.Burst.Unsafe.dll"
 -r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.cinemachine@2.7.9/Runtime/ThirdParty/clipper_library.dll"
--r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.collections@1.3.1/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
--r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.dll"
+-r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.collections@1.4.0/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
+-r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll"
 -r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
 -r:"D:/Commissions/3D concert/3DConcert/3DConcertURP/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/Y2_T2/Unity_projects/2021.1.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -323,9 +323,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/NaughtyAttributes.Test.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Jobs.Editor.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Jobs.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -384,7 +383,7 @@
 "Assets/Stage_scripts/Lasers/LaserMovementEvent.cs"
 "Assets/Stage_scripts/LookAtPerformer.cs"
 -langversion:8.0
-
+/unsafe+
 /deterministic
 /optimize+
 /debug:portable
