@@ -266,7 +266,7 @@ namespace MagicaCloth
                     sharedVirtualMeshInfoList = Manager.Mesh.sharedVirtualMeshInfoList.ToJobArray(),
 
                     virtualVertexUseList = Manager.Mesh.virtualVertexUseList.ToJobArray(),
-                    virtualVertexFlagList = Manager.Mesh.virtualVertexUseList.ToJobArray(),
+                    virtualVertexFlagList = Manager.Mesh.virtualVertexFlagList.ToJobArray(),
                     virtualPosList = Manager.Mesh.virtualPosList.ToJobArray(),
 
                     sharedTriangles = Manager.Mesh.sharedVirtualTriangleList.ToJobArray(),

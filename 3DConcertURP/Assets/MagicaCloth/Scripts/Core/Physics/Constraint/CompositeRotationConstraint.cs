@@ -393,6 +393,8 @@ namespace MagicaCloth
                             var bpos = basePosList[index];
                             var pbpos = basePosList[pindex];
                             var v = bpos - pbpos;
+                            if (math.lengthsq(v) < 1e-09f)
+                                continue;
                             v = math.normalize(v);
                             var ipq = math.inverse(pbrot);
                             localPos = math.mul(ipq, v);

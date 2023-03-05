@@ -32,6 +32,16 @@ Then read the [System Overview] and proceed with the [Setup Guide] for a better 
 
 
 ### Release Notes
+[v1.12.11]
+Fixed: Fixed an issue that caused an error with the Collections 2.x package.
+
+[v1.12.10]
+Fixed: Fixed an issue that could cause malfunctions in calculating vertex normals when using many MeshCloths.
+
+[v1.12.9]
+Fixed: Fixed an issue in RestoreRotation in Algorithm 2 that caused an error when two particles overlapped at exactly the same coordinates.
+Fixed: Fixed an issue where external forces such as wind would become weaker at lower framerates.
+
 [v1.12.8]
 Fixed: Fixed an issue that caused an error when removing a cloth component after adding a collider. This is a bug introduced in v1.12.7.
 

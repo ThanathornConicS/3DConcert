@@ -789,7 +789,6 @@ namespace MagicaCloth
                     force += gravityDirection * (gravity * mass);
 
                     // 外部フォース
-                    if (runCount == 0)
                     {
                         float3 exForce = 0;
                         switch (teamData.forceMode)
