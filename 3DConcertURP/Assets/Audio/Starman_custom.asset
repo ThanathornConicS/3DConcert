@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: Starman_custom
   m_EditorClassIdentifier: 
-  mSourceClip: {fileID: 8300000, guid: 31f2caa5949da4cb1b3a780f4864cae1, type: 3}
+  mSourceClip: {fileID: 8300000, guid: 09d6068ded6bb1e4a99c136c20cd7291, type: 3}
   mAudioFilePath: 
-  mSampleRate: 44100
+  mSampleRate: 48000
   mIgnoreLatencyOffset: 0
   mTempoSections:
   - sectionName: New Section
@@ -22,4 +22,5 @@ MonoBehaviour:
     samplesPerBeat: 22050
     beatsPerMeasure: 4
     bStartNewMeasure: 1
-  mTracks: []
+  mTracks:
+  - {fileID: 11400000, guid: 214b135f010b53c45ac40f34ad5f8881, type: 2}

@@ -45,19 +45,6 @@ namespace SonicBloom.Koreo.Demos
 			return retVal;
 		}
 		
-		public static float GetCurveVal(this KoreographyEvent koreoEvent, int sampleTime)
-		{
-			float retVal = 0.0f;
-
-			LightsPayload pl = koreoEvent.Payload as LightsPayload;
-			if (pl != null)
-			{
-				retVal = pl.LightVal.AnimCurve.Evaluate(sampleTime);
-			}
-
-			return retVal;
-		}
-
 		public static LightPosition GetLightPos(this KoreographyEvent koreoEvent)
         {
 			LightPosition retVal = 0;

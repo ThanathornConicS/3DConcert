@@ -17,13 +17,12 @@ public enum LightAction
     middle_wave
 }
 
+[CreateAssetMenu]
 public class LightCaller : ScriptableObject
 {
     /// <summary>
     /// Animation curve for animating lights
     /// </summary>
-    [SerializeField]
-    private AnimationCurve m_animCurve;
 
     [SerializeField]
     private LightPosition m_callLight;
@@ -31,12 +30,6 @@ public class LightCaller : ScriptableObject
     [SerializeField]
     private LightAction m_lightFuction;
     
-
-    public AnimationCurve AnimCurve
-    {
-        get { return m_animCurve; }
-    }
-
     public LightPosition CallLight
     {
         get { return m_callLight; }

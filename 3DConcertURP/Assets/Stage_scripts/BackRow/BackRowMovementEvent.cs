@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-
-
-
 namespace SonicBloom.Koreo.Demos
 {
     public class BackRowMovementEvent : MonoBehaviour
