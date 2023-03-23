@@ -18,9 +18,9 @@ namespace SonicBloom.Koreo.Demos
 		#region Serialization Handling
 
 		[HideInInspector][SerializeField]
-		protected List<MaterialPayload> _LightsPayloads;      // List that stores LightsPayload types.
+		protected List<LightsPayload> _LightsPayloads;// List that stores LightsPayload types.
 		[HideInInspector][SerializeField]
-		protected List<int> _LightsPayloadIdxs;   // List that stores indices of LightsPayload types in the Koreography Track.
+		protected List<int> _LightsPayloadIdxs;			// List that stores indices of LightsPayload types in the Koreography Track.
 
 		#endregion
 	}

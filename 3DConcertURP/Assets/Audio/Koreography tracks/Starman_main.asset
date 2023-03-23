@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: Starman_main
+  m_EditorClassIdentifier: 
+  mSourceClip: {fileID: 8300000, guid: 09d6068ded6bb1e4a99c136c20cd7291, type: 3}
+  mAudioFilePath: 
+  mSampleRate: 48000
+  mIgnoreLatencyOffset: 0
+  mTempoSections:
+  - sectionName: Main
+    startSample: 0
+    samplesPerBeat: 15567.567567567567
+    beatsPerMeasure: 4
+    bStartNewMeasure: 0
+  mTracks:
+  - {fileID: 11400000, guid: 92654c789538d61469c831f5fd0c4498, type: 2}
+  - {fileID: 11400000, guid: fa7192a292b8f13428aeb98b91cc0d18, type: 2}
+  - {fileID: 11400000, guid: 7e0e2beed06d2614a87b063fc78f9145, type: 2}
+  - {fileID: 11400000, guid: 5b77d8ef051ad044f9834ba2f397eda6, type: 2}
+  - {fileID: 11400000, guid: bb42c833cc2f5b143a9369aff2106233, type: 2}
+  - {fileID: 11400000, guid: d15f5d0be568dae4e80751bbbd2dbe8e, type: 2}
+  - {fileID: 11400000, guid: 15a44e8381910524e8c4233ad0811158, type: 2}
+  - {fileID: 11400000, guid: c298d34142fced74c94abcc0c61e33eb, type: 2}
+  - {fileID: 11400000, guid: ada354a6fdfa30f4d9c51512c27a1250, type: 2}
+  - {fileID: 11400000, guid: b91b13ecf6671654d939bf38859841d9, type: 2}
+  - {fileID: 11400000, guid: 771e0fe172df7494cbd25220d0ccc4ba, type: 2}
+  - {fileID: 11400000, guid: fcae2a9ca8b4b3a40bb8c4138d6c33ff, type: 2}
+  - {fileID: 11400000, guid: 1ec551cadb4f04f42a311e4648b8a1ef, type: 2}
+  - {fileID: 11400000, guid: 29b30f5bf89dc974da0575bea5b43750, type: 2}
+  - {fileID: 11400000, guid: 1f5ce5cbdcc954a489af609ec3d0456c, type: 2}
+  - {fileID: 11400000, guid: e5caf07891cf3134892dffd1300618d4, type: 2}
+  - {fileID: 11400000, guid: 09f6729c57d4ea64692461774f62b1da, type: 2}
+  - {fileID: 11400000, guid: 8a1a6076291c38841b26eb9e8f3e2413, type: 2}
+  - {fileID: 11400000, guid: bd241b31863dc6249964fbbc098282b5, type: 2}
+  - {fileID: 11400000, guid: 00ce0ab7725daca44b2ab1f0966e6a21, type: 2}

@@ -9,15 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eaad1da5a69c4dbfbc7ccb4bcb08e95, type: 3}
-  m_Name: Nedafakljfalfs
+  m_Script: {fileID: 11500000, guid: ebb25b5262008f44b99252759b4caed1, type: 3}
+  m_Name: custom_track
   m_EditorClassIdentifier: 
-  mEventID: Nedafakljfalfs
-  mEventList:
-  - mStartSample: 198450
-    mEndSample: 198450
-  _SerializedPayloadTypes:
-  - SonicBloom.Koreo.Demos.MaterialPayload
+  mEventID: 
+  mEventList: []
+  _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -36,6 +33,3 @@ MonoBehaviour:
   _TextPayloadIdxs: 
   _LightsPayloads: []
   _LightsPayloadIdxs: 
-  _MaterialPayloads:
-  - mMaterialVal: {fileID: 0}
-  _MaterialPayloadIdxs: 00000000
