@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
-  m_Name: Starman_Drums
+  m_Script: {fileID: 11500000, guid: 9eaad1da5a69c4dbfbc7ccb4bcb08e95, type: 3}
+  m_Name: Nedafakljfalfs
   m_EditorClassIdentifier: 
-  mEventID: 
-  mEventList: []
-  _SerializedPayloadTypes: []
+  mEventID: Nedafakljfalfs
+  mEventList:
+  - mStartSample: 198450
+    mEndSample: 198450
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.Demos.MaterialPayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -31,3 +34,8 @@ MonoBehaviour:
   _SpectrumPayloadIdxs: 
   _TextPayloads: []
   _TextPayloadIdxs: 
+  _LightsPayloads: []
+  _LightsPayloadIdxs: 
+  _MaterialPayloads:
+  - mMaterialVal: {fileID: 0}
+  _MaterialPayloadIdxs: 00000000
