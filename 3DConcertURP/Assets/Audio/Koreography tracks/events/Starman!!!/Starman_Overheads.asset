@@ -1004,7 +1004,8 @@ MonoBehaviour:
     mEndSample: 10702692
   - mStartSample: 10850583
     mEndSample: 10850583
-  _SerializedPayloadTypes: []
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -1019,5 +1020,6 @@ MonoBehaviour:
   _IntPayloadIdxs: 
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
-  _TextPayloads: []
-  _TextPayloadIdxs: 
+  _TextPayloads:
+  - mTextVal: 
+  _TextPayloadIdxs: 03000000

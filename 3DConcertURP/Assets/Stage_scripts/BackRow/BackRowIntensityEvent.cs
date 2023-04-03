@@ -11,6 +11,13 @@ namespace SonicBloom.Koreo.Demos
         [EventID]
         public string NarrowEvent;
 
+        LightPosition backrowSelect;
+        LightAction narrowAction;
+        LightAction wideAction;
+
+        LightPosition current_set;
+        LightAction current_action;
+
         private BackRow_Controller controller;
 
         private float[] wRandom;
@@ -33,24 +40,46 @@ namespace SonicBloom.Koreo.Demos
 
         void WideIntensity(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
-            if (evt.HasCurvePayload())
+            if (evt.HasLightCallerPayload())
             {
-                // Get the value of the curve at the current audio position.  This will be a
-                //  value between [0, 1] and will be used, below, to interpolate between
-                //  minScale and maxScale.
+                current_action = evt.GetLightAction();
+                current_set = evt.GetLightPos();
+            }
+            if (evt.HasCurvePayload() && current_action == LightAction.intensity
+                && current_set == LightPosition.Wide)
+            {
                 float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
+                for (int i = 0; i < controller.WideSpotlights.Length; i++)
+                    controller.ChangeIntensityWide(i, curveValue);
+            }
+            else if (evt.HasCurvePayload() && current_action == LightAction.underwater
+                && current_set == LightPosition.all)
+            {
+                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
+                controller.PlayUnderwater(curveValue);
+            }
+            else if (evt.HasCurvePayload() && current_action == LightAction.middle_wave
+                && current_set == LightPosition.all)
+            {
+                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
+                controller.PlayMiddleWave(curveValue);
+            }
+            else if (evt.HasCurvePayload() && current_action == LightAction.underwater_to_halfBright
+                && current_set == LightPosition.all)
+            {
+                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
+                controller.PlayUnderwater_to_half_bright(curveValue);
             }
         }
         
         void NarrowIntensity(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
-            if (evt.HasCurvePayload())
+            if (evt.HasCurvePayload() && current_action == LightAction.intensity
+                && current_set == LightPosition.Narrow)
             {
-                // Get the value of the curve at the current audio position.  This will be a
-                //  value between [0, 1] and will be used, below, to interpolate between
-                //  minScale and maxScale.
                 float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
-
+                for (int i = 0; i < controller.NarrowSpotlights.Length; i++)
+                    controller.ChangeIntensityNarrow(i, curveValue);
             }
         }
     }

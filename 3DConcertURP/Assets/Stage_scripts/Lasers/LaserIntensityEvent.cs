@@ -25,6 +25,8 @@ namespace SonicBloom.Koreo.Demos
         private float[] sourceMaxArr;
         private float[] filterArr;
 
+        LightAction current_action;
+
         void Start()
         {
             Koreographer.Instance.RegisterForEventsWithTime(eventIntensity, LaserIntensity);
@@ -57,7 +59,11 @@ namespace SonicBloom.Koreo.Demos
 
         void LaserIntensity(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
-            if (evt.HasCurvePayload())
+            if (evt.HasLightCallerPayload())
+            {
+                current_action = evt.GetLightAction();
+            }
+            if (evt.HasCurvePayload() && current_action == LightAction.dimming_pattern)
             {
                 // Get the value of the curve at the current audio position.  This will be a
                 //  value between [0, 1] and will be used, below, to interpolate between
@@ -66,6 +72,11 @@ namespace SonicBloom.Koreo.Demos
 
                 DimmingPattern(curveValue);
                 //transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, curveValue);
+            }
+            else if (evt.HasCurvePayload() && current_action == LightAction.intensity)
+            {
+                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
+                JustIntensity(curveValue);
             }
         }
 
