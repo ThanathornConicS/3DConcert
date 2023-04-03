@@ -15,8 +15,8 @@ namespace SonicBloom.Koreo.Demos
         [EventID]
         public string NarrowEvent;
 
-        [SerializeField]
-        public Animation [] animations;
+        LightPosition current_set;
+        LightAction current_action;
 
         [MinMaxSlider(-60.0f, 60.0f)]
 
@@ -45,14 +45,18 @@ namespace SonicBloom.Koreo.Demos
 
         void WideMovement(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
+            if (evt.HasLightCallerPayload())
+            {
+                current_action = evt.GetLightAction();
+                current_set = evt.GetLightPos();
+            }
             if (evt.HasCurvePayload())
             {
-                // Get the value of the curve at the current audio position.  This will be a
-                //  value between [0, 1] and will be used, below, to interpolate between
-                //  minScale and maxScale.
                 float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
-
-                //transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, curveValue);
+                if (current_action == LightAction.front_back && current_set == LightPosition.Wide)
+                {
+                    wFrontBack(curveValue);
+                }
             }
         }
 
@@ -60,39 +64,22 @@ namespace SonicBloom.Koreo.Demos
         {
             if (evt.HasCurvePayload())
             {
-                // Get the value of the curve at the current audio position.  This will be a
-                //  value between [0, 1] and will be used, below, to interpolate between
-                //  minScale and maxScale.
                 float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
-
-                //transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, curveValue);
+                if (current_action == LightAction.front_back && current_set == LightPosition.Narrow)
+                {
+                    nFrontBack(curveValue);
+                }
             }
         }
 
         void wFrontBack(float t)
         {
-            for (int i = 0; i < controller.WideSpotlights.Length; i++)
-            {
-                controller.WideSpotlights[i].transform.localEulerAngles = new Vector3
-                (
-                    Mathf.Lerp(minMaxAngle.x, minMaxAngle.y, t),
-                    controller.WideSpotlights[i].transform.localEulerAngles.y,
-                    controller.WideSpotlights[i].transform.localEulerAngles.z
-                );
-            }
+            controller.animator.Play("wide_front_back");
         }
         
         void nFrontBack(float t)
         {
-            for (int i = 0; i < controller.NarrowSpotlights.Length; i++)
-            {
-                controller.NarrowSpotlights[i].transform.localEulerAngles = new Vector3
-                (
-                    Mathf.Lerp(minMaxAngle.x, minMaxAngle.y, t),
-                    controller.NarrowSpotlights[i].transform.localEulerAngles.y,
-                    controller.NarrowSpotlights[i].transform.localEulerAngles.z
-                );
-            }
+            controller.animator.Play("narrow_front_back");
         }
     }
 }

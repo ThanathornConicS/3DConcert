@@ -14,6 +14,8 @@ public class BackRow_Controller : MonoBehaviour
 
     private Vector3 OriginalRot;
 
+    public Animator animator;
+
     //Maxs Mins
     [SerializeField]
     private float WideIntensityMax, NarrowIntensityMax;
@@ -29,6 +31,14 @@ public class BackRow_Controller : MonoBehaviour
         WideIntensityMax = 1.8f;
         //Row 2
         NarrowIntensityMax = 2.0f;
+
+        animator = this.GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        // TODO: delete this function
+        // WideSpotlights[0].GetComponent<Light>().range = WideSpotlights[0].GetComponent<Light>().intensity;
     }
 
     [Button]
@@ -51,15 +61,56 @@ public class BackRow_Controller : MonoBehaviour
             ChangeIntensityNarrow(j, 1.0f);
     }
 
-    void ChangeIntensityWide(int i, float intensity) //intensity b/w 0-1
+    [Button]
+    private void TurnoffBackrow()
+    {
+        for (int i = 0; i < WideSpotlights.Length; i++)
+            ChangeIntensityWide(i, 0.0f);
+
+        for (int j = 0; j < NarrowSpotlights.Length; j++)
+            ChangeIntensityNarrow(j, 0.0f);
+    }
+
+    public void ChangeIntensityWide(int i, float intensity) //intensity b/w 0-1
     {
         float val = Mathf.Lerp(0.0f, WideIntensityMax, intensity);
         WideSpotlights[i].GetComponent<Light>().intensity = val;
+        
     }
 
-    void ChangeIntensityNarrow(int i, float intensity) //intensity b/w 0-1
+    public void ChangeIntensityNarrow(int i, float intensity) //intensity b/w 0-1
     {
         float val = Mathf.Lerp(0.0f, NarrowIntensityMax, intensity);
         NarrowSpotlights[i].GetComponent<Light>().intensity = val;
+    }
+
+    public void PlayUnderwater(float t)
+    {
+        animator.Play("underwater", 0, t);
+        if (t >= 1.0f)
+        {
+            animator.StopPlayback();
+            //animator.Play("idle");
+        }
+    }
+
+    public void PlayMiddleWave(float t)
+    {
+        animator.Play("waves_middle", 0, t);
+        if (t >= 1.0f)
+        {
+            animator.StopPlayback();
+            //animator.Play("idle");
+        }
+    }
+
+    public void PlayUnderwater_to_half_bright(float t)
+    {
+        animator.Play("underwater_to_half_bright", 0, t);
+        if (t >= 1.0f)
+        {
+            animator.StopPlayback();
+            //animator.Play("idle");
+        }
     }
 }

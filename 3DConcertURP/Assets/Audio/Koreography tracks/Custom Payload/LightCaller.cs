@@ -4,9 +4,11 @@ using UnityEngine;
 
 public enum LightPosition
 {
+    all,
     left,
     right,
-    all
+    Wide, 
+    Narrow    
 }
 
 public enum LightAction
@@ -14,7 +16,9 @@ public enum LightAction
     intensity,
     front_back,
     underwater, 
-    middle_wave
+    middle_wave,
+    dimming_pattern, //for lasers
+    underwater_to_halfBright
 }
 
 [CreateAssetMenu]

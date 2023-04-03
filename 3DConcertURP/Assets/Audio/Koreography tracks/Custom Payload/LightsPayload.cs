@@ -1,4 +1,5 @@
 using UnityEngine;
+using NaughtyAttributes;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -144,6 +145,7 @@ namespace SonicBloom.Koreo.Demos
 
 			float pickerWidth = 20f;
 			LightCaller newVal = null;
+
 
 			// Handle short fields.
 			if (displayRect.width >= pickerWidth + 2f)

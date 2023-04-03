@@ -14,136 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: custom_track
   mEventList:
-  - mStartSample: 591566
-    mEndSample: 591566
-  - mStartSample: 622702
-    mEndSample: 622702
-  - mStartSample: 630485
-    mEndSample: 630485
-  - mStartSample: 638269
-    mEndSample: 638269
-  - mStartSample: 646053
-    mEndSample: 646053
-  - mStartSample: 653837
-    mEndSample: 653837
-  - mStartSample: 661620
-    mEndSample: 661620
-  - mStartSample: 669404
-    mEndSample: 669404
-  - mStartSample: 677188
-    mEndSample: 677188
-  - mStartSample: 684972
-    mEndSample: 684972
-  - mStartSample: 692756
-    mEndSample: 692756
-  - mStartSample: 700539
-    mEndSample: 700539
-  - mStartSample: 708323
-    mEndSample: 708323
-  - mStartSample: 716107
-    mEndSample: 716107
-  - mStartSample: 723891
-    mEndSample: 723891
-  - mStartSample: 731674
-    mEndSample: 731674
-  - mStartSample: 739458
-    mEndSample: 739458
-  - mStartSample: 747242
-    mEndSample: 747242
-  - mStartSample: 755026
-    mEndSample: 755026
-  - mStartSample: 762810
-    mEndSample: 762810
-  - mStartSample: 770593
-    mEndSample: 770593
-  - mStartSample: 778377
-    mEndSample: 778377
-  - mStartSample: 786161
-    mEndSample: 786161
-  - mStartSample: 793945
-    mEndSample: 793945
-  - mStartSample: 801728
-    mEndSample: 801728
-  - mStartSample: 809512
-    mEndSample: 809512
-  - mStartSample: 817296
-    mEndSample: 817296
-  - mStartSample: 825080
-    mEndSample: 825080
-  - mStartSample: 832864
-    mEndSample: 832864
-  - mStartSample: 840647
-    mEndSample: 840647
-  - mStartSample: 848431
-    mEndSample: 848431
-  - mStartSample: 856215
-    mEndSample: 856215
-  - mStartSample: 863999
-    mEndSample: 863999
-  - mStartSample: 871782
-    mEndSample: 871782
-  - mStartSample: 879566
-    mEndSample: 879566
-  - mStartSample: 887350
-    mEndSample: 887350
-  - mStartSample: 895134
-    mEndSample: 895134
-  - mStartSample: 902918
-    mEndSample: 902918
-  - mStartSample: 910701
-    mEndSample: 910701
-  - mStartSample: 918485
-    mEndSample: 918485
-  - mStartSample: 926269
-    mEndSample: 926269
-  - mStartSample: 934053
-    mEndSample: 934053
-  - mStartSample: 941836
-    mEndSample: 941836
-  - mStartSample: 949620
-    mEndSample: 949620
-  - mStartSample: 957404
-    mEndSample: 957404
-  - mStartSample: 965188
-    mEndSample: 965188
-  - mStartSample: 972972
-    mEndSample: 972972
-  - mStartSample: 980755
-    mEndSample: 980755
-  - mStartSample: 988539
-    mEndSample: 988539
-  - mStartSample: 996323
-    mEndSample: 996323
-  - mStartSample: 1004107
-    mEndSample: 1004107
-  - mStartSample: 1011890
-    mEndSample: 1011890
-  - mStartSample: 1019674
-    mEndSample: 1019674
-  - mStartSample: 1027458
-    mEndSample: 1027458
-  - mStartSample: 1035242
-    mEndSample: 1035242
-  - mStartSample: 1043025
-    mEndSample: 1043025
-  - mStartSample: 1050809
-    mEndSample: 1050809
-  - mStartSample: 1058593
-    mEndSample: 1058593
-  - mStartSample: 1066377
-    mEndSample: 1066377
-  - mStartSample: 1074161
-    mEndSample: 1074161
-  - mStartSample: 1081944
-    mEndSample: 1081944
-  - mStartSample: 1089728
-    mEndSample: 1089728
-  - mStartSample: 1097512
-    mEndSample: 1097512
-  - mStartSample: 1105296
-    mEndSample: 1105296
-  - mStartSample: 1113079
-    mEndSample: 1113079
+  - mStartSample: 66150
+    mEndSample: 66150
+  - mStartSample: 66150
+    mEndSample: 330750
+  - mStartSample: 330750
+    mEndSample: 330750
+  - mStartSample: 330750
+    mEndSample: 441000
   - mStartSample: 1619025
     mEndSample: 1619025
   - mStartSample: 1634592
@@ -1900,12 +1778,61 @@ MonoBehaviour:
     mEndSample: 10850583
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.Demos.LightsPayload
+  - SonicBloom.Koreo.CurvePayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
   _ColorPayloadIdxs: 
-  _CurvePayloads: []
-  _CurvePayloadIdxs: 
+  _CurvePayloads:
+  - mCurveData:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  - mCurveData:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -1
+        outSlope: -1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  _CurvePayloadIdxs: 0100000003000000
   _FloatPayloads: []
   _FloatPayloadIdxs: 
   _GradientPayloads: []
@@ -1917,5 +1844,6 @@ MonoBehaviour:
   _TextPayloads: []
   _TextPayloadIdxs: 
   _LightsPayloads:
-  - m_LightVal: {fileID: 0}
-  _LightsPayloadIdxs: 01000000
+  - m_LightVal: {fileID: 11400000, guid: 787aa3fe6b4519e49b17cd8ae7eb4c6e, type: 2}
+  - m_LightVal: {fileID: 11400000, guid: 1b63eb8cf469679499d1bac3dec3f9ad, type: 2}
+  _LightsPayloadIdxs: 0000000002000000
