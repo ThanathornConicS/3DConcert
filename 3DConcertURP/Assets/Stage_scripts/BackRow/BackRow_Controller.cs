@@ -20,6 +20,10 @@ public class BackRow_Controller : MonoBehaviour
     [SerializeField]
     private float WideIntensityMax, NarrowIntensityMax;
 
+    //purple, blue, green, yellow
+    [SerializeField]
+    public Gradient[] gradients;
+
     void Start()
     {
         //Koreographer.Instance.RegisterForEventsWithTime(eventIntensity, UnderwaterLight);
@@ -82,6 +86,20 @@ public class BackRow_Controller : MonoBehaviour
     {
         float val = Mathf.Lerp(0.0f, NarrowIntensityMax, intensity);
         NarrowSpotlights[i].GetComponent<Light>().intensity = val;
+    }
+
+    public void ChangeGradientNarrow(int i, Gradient g)
+    {
+        NarrowSpotlights[i].GetComponent<VLB.VolumetricLightBeam>().colorGradient = g;
+        //TODO: change light color to the first value of gradient
+        NarrowSpotlights[i].GetComponent<Light>().color = g.Evaluate(0.0f);
+    }
+
+    public void ChangeGradientWide(int i, Gradient g)
+    {
+        WideSpotlights[i].GetComponent<VLB.VolumetricLightBeam>().colorGradient = g;
+        //TODO: change light color to the first value of gradient
+        WideSpotlights[i].GetComponent<Light>().color = g.Evaluate(0.0f);
     }
 
     public void PlayUnderwater(float t)
