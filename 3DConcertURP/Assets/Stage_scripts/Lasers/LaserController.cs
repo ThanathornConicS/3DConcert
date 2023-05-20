@@ -9,13 +9,16 @@ namespace SonicBloom.Koreo.Demos
     {
         [SerializeField]
         public GameObject[] LaserbeamsL;
-        //[SerializeField]
-        //public GameObject[] LaserbeamsR;
-        //number of lasers = 9 on each side
 
         [SerializeField]
         private float maxIntensity;
 
+        public float MaxIntensity()
+        {
+            return maxIntensity;
+        }
+
+        //rotation angle
         //X = front back
         //Y = side to side
 
@@ -53,6 +56,11 @@ namespace SonicBloom.Koreo.Demos
             }
         }
 
+        public Vector3 defaultRot()
+        {
+            return OriginalRot;
+        }
+
         public void ChangeIntensity(int i, float intensity) //intensity b/w 0-1
         {
             float val = Mathf.Lerp(0.0f, maxIntensity, intensity);
@@ -60,5 +68,19 @@ namespace SonicBloom.Koreo.Demos
             //LaserbeamsR[i].GetComponent<Light>().intensity = val;
         }
 
+        public void LaserOn()
+        {
+            for (int i = 0; i < lasersNum; i++)
+                ChangeIntensity(i, MaxIntensity());
+        }
+
+        public void LaserOff()
+        {
+            //reset angles, then dim all lights
+            ResetAngles();
+
+            for (int i = 0; i < lasersNum; i++)
+                ChangeIntensity(i, 0);
+        }
     }
 }

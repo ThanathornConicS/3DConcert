@@ -19,15 +19,8 @@ public class BackRow_Controller : MonoBehaviour
     //Maxs Mins
     [SerializeField]
     private float WideIntensityMax, NarrowIntensityMax;
-
-    //purple, blue, green, yellow
-    [SerializeField]
-    public Gradient[] gradients;
-
     void Start()
     {
-        //Koreographer.Instance.RegisterForEventsWithTime(eventIntensity, UnderwaterLight);
-        //Koreographer.Instance.RegisterForEventsWithTime(eventRotation, UnderwaterLight);
         OriginalRot = new Vector3(0.0f, 0.0f, 0.0f);
         ResetAngles();
 
@@ -37,12 +30,14 @@ public class BackRow_Controller : MonoBehaviour
         NarrowIntensityMax = 2.0f;
 
         animator = this.GetComponent<Animator>();
-    }
 
-    private void Update()
-    {
-        // TODO: delete this function
-        // WideSpotlights[0].GetComponent<Light>().range = WideSpotlights[0].GetComponent<Light>().intensity;
+        //turn off all lights
+        for (int i = 0; i < WideSpotlights.Length; i++)
+            ChangeIntensityWide(i, 0.0f);
+
+        for (int i = 0; i < NarrowSpotlights.Length; i++)
+            ChangeIntensityNarrow(i, 0.0f);
+
     }
 
     [Button]
@@ -91,44 +86,60 @@ public class BackRow_Controller : MonoBehaviour
     public void ChangeGradientNarrow(int i, Gradient g)
     {
         NarrowSpotlights[i].GetComponent<VLB.VolumetricLightBeam>().colorGradient = g;
-        //TODO: change light color to the first value of gradient
+        //change light color to the first value of gradient
         NarrowSpotlights[i].GetComponent<Light>().color = g.Evaluate(0.0f);
     }
 
     public void ChangeGradientWide(int i, Gradient g)
     {
         WideSpotlights[i].GetComponent<VLB.VolumetricLightBeam>().colorGradient = g;
-        //TODO: change light color to the first value of gradient
+        //change light color to the first value of gradient
         WideSpotlights[i].GetComponent<Light>().color = g.Evaluate(0.0f);
     }
 
-    public void PlayUnderwater(float t)
+    public void changeAnimSpeed(float sp)
     {
-        animator.Play("underwater", 0, t);
-        if (t >= 1.0f)
-        {
-            animator.StopPlayback();
-            //animator.Play("idle");
-        }
+        animator.speed = sp;
     }
 
-    public void PlayMiddleWave(float t)
+    public void PlayUnderwater()
     {
-        animator.Play("waves_middle", 0, t);
-        if (t >= 1.0f)
-        {
-            animator.StopPlayback();
-            //animator.Play("idle");
-        }
+        EverythingFalse();
+        animator.SetBool("underwater", true);
     }
 
-    public void PlayUnderwater_to_half_bright(float t)
+    public void PlayMiddleWave()
     {
-        animator.Play("underwater_to_half_bright", 0, t);
-        if (t >= 1.0f)
-        {
-            animator.StopPlayback();
-            //animator.Play("idle");
-        }
+        EverythingFalse();
+        animator.SetBool("wavesM", true);
+    }
+
+    public void AllBright()
+    {
+        EverythingFalse();
+        animator.SetBool("allBright", true);
+    }
+    public void AllDim()
+    {
+        EverythingFalse();
+        animator.SetBool("allDim", true);
+    }
+
+    public void FrontBack()
+    {
+        EverythingFalse();
+        animator.SetBool("FB", true);
+    }
+
+    void EverythingFalse()
+    {
+        //set every animation parameter to false
+        animator.SetBool("FB", false);
+        animator.SetBool("wideIn", false);
+        animator.SetBool("narrowIn", false);
+        animator.SetBool("underwater", false);
+        animator.SetBool("wavesM", false);
+        animator.SetBool("allDim", false);
+        animator.SetBool("allBright", false);
     }
 }

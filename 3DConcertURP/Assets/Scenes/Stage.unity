@@ -413,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928210757667226314, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_RootOrder
@@ -516,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928210757667226314, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_RootOrder
@@ -724,15 +724,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.5047752
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -1033,7 +1033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &212756439
 Transform:
   m_ObjectHideFlags: 0
@@ -1461,15 +1461,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.21509364
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -1589,15 +1589,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.36764067
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.36764067
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -2376,7 +2376,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &818845553
 Transform:
   m_ObjectHideFlags: 0
@@ -2518,7 +2518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928210757667226314, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_RootOrder
@@ -2882,13 +2882,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101588358}
-  m_LocalRotation: {x: -0.001165177, y: 0.98784536, z: 0.10979339, w: 0.110025406}
-  m_LocalPosition: {x: -1.13, y: 2.97, z: -7.93}
+  m_LocalRotation: {x: 0.013127806, y: 0.9855817, z: 0.014182226, w: 0.16809304}
+  m_LocalPosition: {x: -7.03, y: 5.03, z: 5.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 192.543, y: -12.85199, z: -178.717}
+  m_LocalEulerAnglesHint: {x: 181.349, y: -19.37799, z: -178.243}
 --- !u!1001 &1104798658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3729,15 +3729,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.5521168
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -4125,15 +4125,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.42889085
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -4549,15 +4549,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.54005545
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -4664,15 +4664,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.31097886
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
@@ -4994,7 +4994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1753187849
 Transform:
   m_ObjectHideFlags: 0
@@ -5043,12 +5043,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753187848}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c8a410dde993824eaa2282de5c64eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventIntensity: Test
+  eventIntensity: laserL_starman_anim
   SourceMax: 1
   FilterSize: 5
 --- !u!114 &1753187852
@@ -5058,15 +5058,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753187848}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acae5bb8d28c8e440aea0a26bb9450ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventMovement: Test
+  eventMovement: laserL_starman_anim
   lineupLT: {fileID: 1342735171}
-  minMaxAngle: {x: -20, y: 45}
+  minMaxAngle: {x: -18, y: 52}
   offsetAngle: 5
+  SourceMax: 1
+  FilterSize: 5
 --- !u!4 &1789518143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6743670505663527327, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
@@ -5945,10 +5947,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1973101470}
   - component: {fileID: 1973101469}
-  - component: {fileID: 1973101472}
   - component: {fileID: 1973101471}
-  - component: {fileID: 1973101473}
   - component: {fileID: 1973101474}
+  - component: {fileID: 1973101473}
   m_Layer: 0
   m_Name: Back row lights
   m_TagString: Untagged
@@ -5986,119 +5987,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   WideIntensityMax: 1.8
   NarrowIntensityMax: 2
-  gradients:
-  - serializedVersion: 2
-    key0: {r: 0.9339623, g: 0.22379847, b: 0.61298406, a: 1}
-    key1: {r: 0.38623568, g: 0.096119575, b: 0.7075472, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 46260
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.25882354, g: 0.69411767, b: 0.75294125, a: 1}
-    key1: {r: 0.23025987, g: 0.5739879, b: 0.8301887, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 46260
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.11698109, g: 1, b: 0.16892342, a: 1}
-    key1: {r: 0, g: 0.8267784, b: 0.9056604, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 46260
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  - serializedVersion: 2
-    key0: {r: 0.97020423, g: 1, b: 0, a: 1}
-    key1: {r: 1, g: 0.7328316, b: 0, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 46260
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
 --- !u!4 &1973101470
 Transform:
   m_ObjectHideFlags: 0
@@ -6127,23 +6015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf9ea31c6e24ad48bdd050f79cea96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WideEvent: wide_intensity_track
-  NarrowEvent: custom_track
+  WideEvent: backrow_starman_anim
   minMaxAngle: {x: -26, y: 26}
---- !u!114 &1973101472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973101468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d2655444f339d84d99f05a1feca391d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WideEvent: wide_intensity_track
-  NarrowEvent: custom_track
 --- !u!95 &1973101473
 Animator:
   serializedVersion: 3
@@ -6448,7 +6321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149385, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: intensityOutside
-      value: 1.4399999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149385, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: _TrackChangesDuringPlaytime
@@ -6456,7 +6329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928210757667226314, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_RootOrder
@@ -12887,7 +12760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928210757667226314, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_RootOrder
@@ -13082,15 +12955,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityInside
-      value: 0.5047752
+      value: 1.4399999
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityOutside
-      value: 0.26885918
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 5758697906167249988, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: intensityFromLight
