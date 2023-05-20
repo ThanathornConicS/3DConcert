@@ -12,11 +12,6 @@ namespace SonicBloom.Koreo.Demos
         // Start is called before the first frame update
         [EventID]
         public string WideEvent;
-        [EventID]
-        public string NarrowEvent;
-
-        LightPosition current_set;
-        LightAction current_action;
 
         [MinMaxSlider(-60.0f, 60.0f)]
 
@@ -27,7 +22,6 @@ namespace SonicBloom.Koreo.Demos
         void Start()
         {
             Koreographer.Instance.RegisterForEventsWithTime(WideEvent, WideMovement);
-            Koreographer.Instance.RegisterForEventsWithTime(NarrowEvent, NarrowMovement);
             controller = this.GetComponent<BackRow_Controller>();
 
             minMaxAngle.x = -26.0f;
@@ -45,30 +39,33 @@ namespace SonicBloom.Koreo.Demos
 
         void WideMovement(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
-            if (evt.HasLightCallerPayload())
+            //play animations
+            if (evt.HasTextPayload())
             {
-                current_action = evt.GetLightAction();
-                current_set = evt.GetLightPos();
+                string str = evt.GetTextValue();
+                if (str == "underwater")
+                    controller.PlayUnderwater();
+                else if (str == "wavesM")
+                    controller.PlayMiddleWave();
+                else if (str == "allBright")
+                    controller.AllBright();
+                else if (str == "allDim")
+                    controller.AllDim();
+                else if (str == "FB")
+                    controller.FrontBack();
+                else
+                    Debug.Log("BackRow: String doesn't match parameter names.");
             }
-            if (evt.HasCurvePayload())
-            {
-                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
-                if (current_action == LightAction.front_back && current_set == LightPosition.Wide)
-                {
-                    wFrontBack(curveValue);
-                }
-            }
-        }
 
-        void NarrowMovement(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
-        {
-            if (evt.HasCurvePayload())
+            //change animation speed when there's float payload
+            if (evt.HasFloatPayload())
             {
-                float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
-                if (current_action == LightAction.front_back && current_set == LightPosition.Narrow)
-                {
-                    nFrontBack(curveValue);
-                }
+                controller.changeAnimSpeed(evt.GetFloatValue());
+            }
+
+            else if (evt.HasCurvePayload())
+            {
+                controller.changeAnimSpeed(evt.GetValueOfCurveAtTime(sampleTime));
             }
         }
 
