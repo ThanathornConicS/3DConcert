@@ -123,6 +123,27 @@ namespace SonicBloom.Koreo.Demos
                 }
                 else if (pattern == "on")
                     controller.LaserOn();
+                else if (pattern == "lean")
+                {
+                    //force fan before lean
+                    ////Space between each lasesr is 18 degree
+                    ////starting angle 90
+                    //float angle = 90.0f;
+                    //float increment = 15.0f;
+                    //float finalRot = 0.0f;
+
+                    //for (int i = 0; i < controller.lasersNum; i++)
+                    //{
+                    //    //calculate final rotation value
+                    //    finalRot = angle - (increment * (i + 1));
+
+                    //    //Left
+                    //    controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
+                    //        (controller.LaserbeamsL[i].transform.localEulerAngles.x,
+                    //        Mathf.Lerp(0, finalRot, 1.0f),
+                    //        controller.LaserbeamsL[i].transform.localEulerAngles.z);
+                    //}
+                }
 
             }
         }
