@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
-public class Light : MonoBehaviour
+public class ViewLight : MonoBehaviour
 {
     [SerializeField] private Renderer ObjectToChange;
     [SerializeField] private Material emissiveMaterial;

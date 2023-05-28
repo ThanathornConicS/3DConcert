@@ -10,7 +10,7 @@ public class LightController : MonoBehaviour
     [Header("Stage")] [SerializeField] LightStage currentStage;
 
     [SerializeField] private Color lightColor = new Color(1.0f, 1.0f, 1.0f);
-    [SerializeField] private List<Light> allLight = new List<Light>();
+    [SerializeField] private List<ViewLight> allLight = new List<ViewLight>();
     [SerializeField] private float speed = 0.5f;
 
     [Range(0.0f, 1.0f)] [SerializeField] private float lerpTime = 0.8f;
