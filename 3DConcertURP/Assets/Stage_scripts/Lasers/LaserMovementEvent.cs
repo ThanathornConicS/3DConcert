@@ -123,6 +123,35 @@ namespace SonicBloom.Koreo.Demos
                 }
                 else if (pattern == "on")
                     controller.LaserOn();
+                else if (pattern == "lean")
+                {
+                    //force fan before lean
+                    ////Space between each lasesr is 18 degree
+                    ////starting angle 90
+                    //float angle = 90.0f;
+                    //float increment = 15.0f;
+                    //float finalRot = 0.0f;
+
+                    //for (int i = 0; i < controller.lasersNum; i++)
+                    //{
+                    //    //calculate final rotation value
+                    //    finalRot = angle - (increment * (i + 1));
+
+                    //    //Left
+                    //    controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
+                    //        (controller.LaserbeamsL[i].transform.localEulerAngles.x,
+                    //        Mathf.Lerp(0, finalRot, 1.0f),
+                    //        controller.LaserbeamsL[i].transform.localEulerAngles.z);
+                    //}
+                }
+                else if (pattern == "fanL")
+                {
+                    Debug.Log("Text: fanL");
+                }
+                else if (pattern == "fanR")
+                {
+                    Debug.Log("Text: fanR");
+                }
 
             }
         }
@@ -184,8 +213,8 @@ namespace SonicBloom.Koreo.Demos
                  controller.LaserbeamsL[i].transform.localEulerAngles.z);
 
                 //Debug.Log("i: " + i + " " + Mathf.Lerp(-40.0f, 40.0f, (t * (controller.lasersNum / (i + 1)))));
-
             }
+            //Debug.Log("fanning L");
 
         }
 
@@ -200,7 +229,7 @@ namespace SonicBloom.Koreo.Demos
                  Mathf.Lerp(40.0f + (i * 3), -40.0f - ((controller.lasersNum - i) * 3), (t * ((float)controller.lasersNum / (controller.lasersNum - i)))),
                  controller.LaserbeamsL[i].transform.localEulerAngles.z);
             }
-
+            //Debug.Log("fanning R");
         }
 
         void FrontBackLean(float t)
