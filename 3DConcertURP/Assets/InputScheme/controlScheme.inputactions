@@ -1,0 +1,261 @@
+{
+    "name": "controlScheme",
+    "maps": [
+        {
+            "name": "Camera",
+            "id": "58711a9c-2efa-43c4-826e-c76b0d99ecb6",
+            "actions": [
+                {
+                    "name": "SwitchToCam1",
+                    "type": "Button",
+                    "id": "22afb1d0-66f0-47e8-a9cc-b188d8c8641d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchToCam2",
+                    "type": "Button",
+                    "id": "3dcdcde9-efcd-4cde-90b9-11ac769ac144",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchToCam3",
+                    "type": "Button",
+                    "id": "b8c2ebf2-b048-4391-b016-9698a5448196",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchToCam4",
+                    "type": "Button",
+                    "id": "96dc3238-f746-4c3b-b923-0c28ced9746d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchToCam5",
+                    "type": "Button",
+                    "id": "5949c002-7228-478b-a3cf-1af57efc9583",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SwitchToCam6",
+                    "type": "Button",
+                    "id": "cfaf4951-23cd-4693-8066-2293b1204044",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ToggleFreeCam",
+                    "type": "Button",
+                    "id": "36de436a-aa4c-4f26-9574-f545ecce7ce6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo1",
+                    "type": "Button",
+                    "id": "94a2ae9b-b736-4b48-9132-31dd3befe0c5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo2",
+                    "type": "Button",
+                    "id": "d7262ee3-1d42-4216-ba5d-6a4e872ed9da",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo3",
+                    "type": "Button",
+                    "id": "27912135-c2b7-471f-8bf9-0f03bc302c89",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo4",
+                    "type": "Button",
+                    "id": "55705e75-bce7-4ebd-ab4f-4d7f647f44c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo5",
+                    "type": "Button",
+                    "id": "d1b7b708-3fb3-4888-ab49-56a9b57e102b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetFreeCamTo6",
+                    "type": "Button",
+                    "id": "daa864e0-dc84-491e-81d2-c70eaee0612f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "96856ad1-40c6-4acd-b213-07006988d7ee",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7f3c967e-053d-451c-aff0-a50808bbd407",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3462dbad-dde4-41db-9388-e3b3f3130e91",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "152c2c3d-36d6-4495-931e-969bacdfdd51",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3897fa69-4ca0-4dad-90dd-76a394ebde4d",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7053217b-baf4-4699-bee7-04fe653a30aa",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchToCam6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a949d102-8405-425e-9823-83963f791ab8",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleFreeCam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8d76724-5729-4f1d-9cb2-38111efa8e16",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98f7d774-c7c2-42d1-8fc9-cdc268d8caab",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3effd39a-1fa2-4756-bbe9-3816d51ec4bf",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7feff26-8c56-4aa7-9965-b443666d47a4",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "520f6e4e-b4fd-4d0f-ba50-301abb1616b5",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ac2ffca-fe83-4b83-9681-2ca4ed62da38",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetFreeCamTo6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
