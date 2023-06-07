@@ -144,14 +144,14 @@ namespace SonicBloom.Koreo.Demos
                             controller.LaserbeamsL[i].transform.localEulerAngles.z);
                     }
                 }
-                else if (pattern == "fanL")
-                {
-                    Debug.Log("Text: fanL");
-                }
-                else if (pattern == "fanR")
-                {
-                    Debug.Log("Text: fanR");
-                }
+                //else if (pattern == "fanL")
+                //{
+                //    Debug.Log("Text: fanL");
+                //}
+                //else if (pattern == "fanR")
+                //{
+                //    Debug.Log("Text: fanR");
+                //}
 
             }
         }

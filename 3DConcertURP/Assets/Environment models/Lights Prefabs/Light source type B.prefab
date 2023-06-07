@@ -194,11 +194,11 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  intensityFromLight: 0
-  intensityModeAdvanced: 1
-  intensityInside: 1
-  intensityOutside: 0.36
-  intensityMultiplier: 0.3
+  intensityFromLight: 1
+  intensityModeAdvanced: 0
+  intensityInside: 1.584
+  intensityOutside: 1.584
+  intensityMultiplier: 0.8
   hdrpExposureWeight: 0
   blendingMode: 0
   spotAngleFromLight: 1
