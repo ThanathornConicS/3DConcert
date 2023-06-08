@@ -341,8 +341,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1538524582}
+  - component: {fileID: 1538524583}
+  - component: {fileID: 1538524584}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Example
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,3 +364,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1538524583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538524581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e735cfa182417243bb096052a45b948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  address: 127.0.0.1
+  portTcp: 7003
+  portUdpServer: 7003
+  portUdp: 7004
+  socketType: 0
+  skeletonType: 0
+  connectToAxis: 1
+--- !u!114 &1538524584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538524581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d348a8d77aa84d74fae1469cda00e01e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LOCAL_PORT: 50003
