@@ -20,4 +20,11 @@ public class MagicCircle : MonoBehaviour
         performer.transform.parent = null;
     }
     
+    void Lift()
+    {
+        //Attach performer to the platform
+        AttachMagicCircle();
+
+        //slowing moving up
+    }
 }
