@@ -68,12 +68,14 @@ namespace SonicBloom.Koreo.Demos
             //LaserbeamsR[i].GetComponent<Light>().intensity = val;
         }
 
+        [Button]
         public void LaserOn()
         {
             for (int i = 0; i < lasersNum; i++)
                 ChangeIntensity(i, MaxIntensity());
         }
 
+        [Button]
         public void LaserOff()
         {
             //reset angles, then dim all lights
