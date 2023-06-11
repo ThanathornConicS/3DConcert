@@ -18,7 +18,6 @@ namespace SonicBloom.Koreo.Demos
         {
             Koreographer.Instance.RegisterForEventsWithTime(eventTrigger, TriggerParticles);
             m_Particles = this.GetComponent<ParticleSystem>();
-
         }
 
         void TriggerParticles(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)

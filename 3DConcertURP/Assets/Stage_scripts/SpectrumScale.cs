@@ -42,6 +42,7 @@ namespace SonicBloom.Koreo.Demos
         {
             if (evt.HasCurvePayload())
             {
+                Debug.Log("Here");
                 float curveValue = evt.GetValueOfCurveAtTime(sampleTime);
                 Vector3 tmpVec = new Vector3(
                     InterpolatingScale(curveValue),
