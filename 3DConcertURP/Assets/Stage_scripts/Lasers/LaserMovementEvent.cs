@@ -104,8 +104,8 @@ namespace SonicBloom.Koreo.Demos
                     FanningSideR(curveValue);
                 else if (pattern == "dimming")
                     DimmingPattern(curveValue);
-                else
-                    Debug.Log("Laser: String doesn't match parameter names: " + pattern);
+                //else
+                //    Debug.Log("Laser: String doesn't match parameter names: " + pattern);
                 //transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, curveValue);
             }
 

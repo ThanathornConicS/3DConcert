@@ -1989,7 +1989,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 506545581443024888, guid: b7f7953c686b9544480b31fe9a6113fd, type: 3}
       propertyPath: eventTrigger
-      value: confetti_trigger
+      value: particles_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 726661920422918716, guid: b7f7953c686b9544480b31fe9a6113fd, type: 3}
       propertyPath: m_Name
@@ -2194,7 +2194,7 @@ PrefabInstance:
       objectReference: {fileID: 1055699520}
     - target: {fileID: 1405817653108829300, guid: 896d433c80e59ba41b12dddaed449def, type: 3}
       propertyPath: eventTrigger
-      value: confetti_trigger
+      value: particles_trigger
       objectReference: {fileID: 0}
     - target: {fileID: 3621067472564265278, guid: 896d433c80e59ba41b12dddaed449def, type: 3}
       propertyPath: m_RootOrder
@@ -2342,6 +2342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1844518884}
     m_Modifications:
+    - target: {fileID: 4981169554993547201, guid: 919980c26bf62d9458c91754a968f650, type: 3}
+      propertyPath: eventScale
+      value: speakers
+      objectReference: {fileID: 0}
     - target: {fileID: 4981169554993547202, guid: 919980c26bf62d9458c91754a968f650, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6820,6 +6824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1844518884}
     m_Modifications:
+    - target: {fileID: 4981169554993547201, guid: 919980c26bf62d9458c91754a968f650, type: 3}
+      propertyPath: eventScale
+      value: speakers
+      objectReference: {fileID: 0}
     - target: {fileID: 4981169554993547202, guid: 919980c26bf62d9458c91754a968f650, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6897,6 +6905,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 179120230}
     m_Modifications:
+    - target: {fileID: 506545581443024888, guid: b7f7953c686b9544480b31fe9a6113fd, type: 3}
+      propertyPath: eventTrigger
+      value: particles_trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 726661920422918716, guid: b7f7953c686b9544480b31fe9a6113fd, type: 3}
       propertyPath: m_Name
       value: Confetti R
@@ -6979,6 +6991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1701741074}
     m_Modifications:
+    - target: {fileID: 4981169554993547201, guid: 919980c26bf62d9458c91754a968f650, type: 3}
+      propertyPath: eventScale
+      value: speakers
+      objectReference: {fileID: 0}
     - target: {fileID: 4981169554993547202, guid: 919980c26bf62d9458c91754a968f650, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8360,7 +8376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101588358}
   m_LocalRotation: {x: 0.0000478393, y: -0.9998192, z: 0.018843494, w: 0.0025383106}
-  m_LocalPosition: {x: -0.03, y: 3.74, z: -0.48}
+  m_LocalPosition: {x: 0.06, y: 5.57, z: 15.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1744451864}
@@ -9651,6 +9667,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1990101856}
     m_Modifications:
+    - target: {fileID: 4981169554993547201, guid: 919980c26bf62d9458c91754a968f650, type: 3}
+      propertyPath: eventScale
+      value: speakers
+      objectReference: {fileID: 0}
     - target: {fileID: 4981169554993547202, guid: 919980c26bf62d9458c91754a968f650, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15161,7 +15181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlayOnAwake: 1
-  koreography: {fileID: 11400000, guid: cb2b2a34bb9305f40989bd25022ec5a5, type: 2}
+  koreography: {fileID: 11400000, guid: 2146fd5172128794aaa78a8aefb8f106, type: 2}
   targetKoreographer: {fileID: 1744451863}
 --- !u!82 &1744451862
 AudioSource:
@@ -15272,10 +15292,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadedKoreography:
+  - {fileID: 11400000, guid: 2146fd5172128794aaa78a8aefb8f106, type: 2}
   - {fileID: 11400000, guid: cb2b2a34bb9305f40989bd25022ec5a5, type: 2}
   - {fileID: 11400000, guid: c5af9a8b9892e4849b6c02c36eb0946b, type: 2}
-  - {fileID: 11400000, guid: 2146fd5172128794aaa78a8aefb8f106, type: 2}
-  eventDelayInSeconds: 2
+  eventDelayInSeconds: 0
 --- !u!4 &1744451864
 Transform:
   m_ObjectHideFlags: 0
@@ -29205,6 +29225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1701741074}
     m_Modifications:
+    - target: {fileID: 4981169554993547201, guid: 919980c26bf62d9458c91754a968f650, type: 3}
+      propertyPath: eventScale
+      value: speakers
+      objectReference: {fileID: 0}
     - target: {fileID: 4981169554993547202, guid: 919980c26bf62d9458c91754a968f650, type: 3}
       propertyPath: m_RootOrder
       value: 4
