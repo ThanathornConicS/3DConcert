@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: Original_Song1
   m_EditorClassIdentifier: 
-  mSourceClip: {fileID: 8300000, guid: 1d34a79a229c91840ac778c052918d1e, type: 3}
+  mSourceClip: {fileID: 8300000, guid: 84748c6ac424a704fb03e94eaf413067, type: 3}
   mAudioFilePath: 
-  mSampleRate: 44100
+  mSampleRate: 48000
   mIgnoreLatencyOffset: 0
   mTempoSections:
   - sectionName: New Section
