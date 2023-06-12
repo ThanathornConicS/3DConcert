@@ -8406,7 +8406,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 1101588363}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 2147483647
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 1
@@ -8541,15 +8541,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101588358}
-  m_LocalRotation: {x: 0.0000478393, y: -0.9998192, z: 0.018843494, w: 0.0025383106}
-  m_LocalPosition: {x: 0.06, y: 5.57, z: 15.75}
+  m_LocalRotation: {x: 0.00032050133, y: -0.99199617, z: 0.12624283, w: 0.0025184494}
+  m_LocalPosition: {x: -0.06, y: 3.92, z: -8.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1744451864}
   - {fileID: 1546463634}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 2.159, y: -179.709, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.505, y: -179.709, z: 0}
 --- !u!4 &1101907784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2992069821249007834, guid: bb96f92872aa5204bb2283c78e371be9, type: 3}
