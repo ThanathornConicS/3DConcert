@@ -465,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -644,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -1058,7 +1058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -4645,7 +4645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -5072,7 +5072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -5230,6 +5230,7 @@ MonoBehaviour:
   eventMovement: lasers
   lineupLT: {fileID: 1765101693}
   minMaxAngle: {x: -18, y: 52}
+  minMaxFan: {x: 0, y: 0}
   offsetAngle: 5
   SourceMax: 1
   FilterSize: 5
@@ -7341,7 +7342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -12164,7 +12165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -13953,7 +13954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -15732,7 +15733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -16142,7 +16143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -16380,7 +16381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlayOnAwake: 1
-  koreography: {fileID: 11400000, guid: cb2b2a34bb9305f40989bd25022ec5a5, type: 2}
+  koreography: {fileID: 11400000, guid: c5af9a8b9892e4849b6c02c36eb0946b, type: 2}
   targetKoreographer: {fileID: 1744451863}
 --- !u!82 &1744451862
 AudioSource:
@@ -16668,6 +16669,7 @@ MonoBehaviour:
   eventMovement: lasers
   lineupLT: {fileID: 1342735171}
   minMaxAngle: {x: -18, y: 52}
+  minMaxFan: {x: 0, y: 0}
   offsetAngle: 5
   SourceMax: 1
   FilterSize: 5
@@ -19133,7 +19135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -22305,6 +22307,7 @@ Transform:
   - {fileID: 179120230}
   - {fileID: 1212430104}
   - {fileID: 1055699521}
+  - {fileID: 2032312862346341743}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24752,7 +24755,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 929381581285208757}
     m_Modifications:
     - target: {fileID: 461887482946828203, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
       propertyPath: m_IsActive
@@ -24764,7 +24767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4611521712328496504, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4611521712328496504, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24806,8 +24809,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6802734204336633889, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
+--- !u!4 &2032312862346341743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4611521712328496504, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
+  m_PrefabInstance: {fileID: 2032312862346341742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032312862346341744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2710990963151174432, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
+  m_PrefabInstance: {fileID: 2032312862346341742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2032312862346341745 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6802734204336633889, guid: b65e63b71bc824241adc924abf3686ac, type: 3}
+  m_PrefabInstance: {fileID: 2032312862346341742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032312862346341746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032312862346341744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c46155d8d89814fa2adcb3687424c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventTrigger: particles_trigger
+  ParticleID: 5
+  m_Particles: {fileID: 2032312862346341745}
 --- !u!4 &2045903593507233902
 Transform:
   m_ObjectHideFlags: 0
@@ -26798,7 +26835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Intensity
-      value: 1.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3089301549730149390, guid: 795279456a757c04084e9059c5292ac2, type: 3}
       propertyPath: m_Shadows.m_Type
@@ -26997,7 +27034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5611705295426241167, guid: 8652088fab5ffa444a21a314827aacd7, type: 3}
       propertyPath: m_Shadows.m_Type
