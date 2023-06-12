@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: lasers
   mEventList:
-  - mStartSample: 2822400
-    mEndSample: 2822400
+  - mStartSample: 0
+    mEndSample: 0
+  - mStartSample: 926100
+    mEndSample: 926100
   - mStartSample: 2822400
     mEndSample: 2888550
+  - mStartSample: 2822400
+    mEndSample: 2822400
   - mStartSample: 2888550
     mEndSample: 2954700
   - mStartSample: 2954700
@@ -50,26 +54,26 @@ MonoBehaviour:
     mEndSample: 3880800
   - mStartSample: 3880800
     mEndSample: 3880800
-  - mStartSample: 5534550
-    mEndSample: 5534550
-  - mStartSample: 5534550
-    mEndSample: 5600700
-  - mStartSample: 5600700
-    mEndSample: 5666850
-  - mStartSample: 5666850
-    mEndSample: 5733000
-  - mStartSample: 5733000
-    mEndSample: 5799150
-  - mStartSample: 5799150
-    mEndSample: 5865300
-  - mStartSample: 5865300
-    mEndSample: 5931450
-  - mStartSample: 5931450
-    mEndSample: 5997600
-  - mStartSample: 5997600
-    mEndSample: 6063750
-  - mStartSample: 6063750
-    mEndSample: 6063750
+  - mStartSample: 5556600
+    mEndSample: 5556600
+  - mStartSample: 5556600
+    mEndSample: 5622750
+  - mStartSample: 5622750
+    mEndSample: 5688900
+  - mStartSample: 5688900
+    mEndSample: 5755050
+  - mStartSample: 5755050
+    mEndSample: 5821200
+  - mStartSample: 5821200
+    mEndSample: 5887350
+  - mStartSample: 5887350
+    mEndSample: 5953500
+  - mStartSample: 5953500
+    mEndSample: 6019650
+  - mStartSample: 6019650
+    mEndSample: 6085800
+  - mStartSample: 6085800
+    mEndSample: 6085800
   - mStartSample: 7078050
     mEndSample: 7078050
   - mStartSample: 7078091
@@ -79,8 +83,8 @@ MonoBehaviour:
   - mStartSample: 7717500
     mEndSample: 7717500
   _SerializedPayloadTypes:
-  - SonicBloom.Koreo.TextPayload
   - SonicBloom.Koreo.CurvePayload
+  - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -710,7 +714,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  _CurvePayloadIdxs: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000130000001400000015000000160000001700000018000000190000001a0000001d0000001e000000
+  _CurvePayloadIdxs: 020000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000015000000160000001700000018000000190000001a0000001b0000001c0000001f00000020000000
   _FloatPayloads: []
   _FloatPayloadIdxs: 
   _GradientPayloads: []
@@ -726,7 +730,7 @@ MonoBehaviour:
   - mTextVal: off
   - mTextVal: fan
   - mTextVal: off
-  _TextPayloadIdxs: 0000000011000000120000001b0000001c0000001f000000
+  _TextPayloadIdxs: 0300000013000000140000001d0000001e00000021000000
   _LightsPayloads: []
   _LightsPayloadIdxs: 
   _MaterialPayloads: []
