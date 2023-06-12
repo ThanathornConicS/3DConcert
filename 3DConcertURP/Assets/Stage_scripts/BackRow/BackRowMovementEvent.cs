@@ -53,6 +53,8 @@ namespace SonicBloom.Koreo.Demos
                     controller.AllDim();
                 else if (str == "FB")
                     controller.FrontBack();
+                else if (str == "spiral")
+                    controller.PlaySpiral();
                 else
                     Debug.Log("BackRow: String doesn't match parameter names.");
             }

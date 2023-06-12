@@ -108,6 +108,12 @@ public class BackRow_Controller : MonoBehaviour
         animator.SetBool("underwater", true);
     }
 
+    public void PlaySpiral()
+    {
+        EverythingFalse();
+        animator.SetBool("spiral", true);
+    }
+
     public void PlayMiddleWave()
     {
         EverythingFalse();
@@ -141,5 +147,6 @@ public class BackRow_Controller : MonoBehaviour
         animator.SetBool("wavesM", false);
         animator.SetBool("allDim", false);
         animator.SetBool("allBright", false);
+        animator.SetBool("spiral", false);
     }
 }
