@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using System;
 
 public class LightController : MonoBehaviour
 {
-    enum LightStage { none, onAndOff, rainbowWave, fadeBetweenThreeColor };
+    public enum LightStage { none, onAndOff, rainbowWave, fadeBetweenThreeColor };
 
-    [Header("Stage")] [SerializeField] LightStage currentStage;
+    [Header("Stage")] [SerializeField] private LightStage currentStage;
 
     [SerializeField] private Color lightColor = new Color(1.0f, 1.0f, 1.0f);
     [SerializeField] private List<ViewLight> allLight = new List<ViewLight>();
@@ -114,6 +115,7 @@ public class LightController : MonoBehaviour
         for(int lightNumber = 0; lightNumber < allLight.Count; lightNumber++)
         {
             allLight[lightNumber].SetLightNumber(lightNumber);
+            allLight[lightNumber].SetAllLightNumber(allLight.Count);
         }
     }
 
@@ -129,5 +131,20 @@ public class LightController : MonoBehaviour
             }
             timer = 0.0f;
         }
+    }
+
+    public void SetLEDLightSpeed(float spd)
+    {
+        speed = spd;
+    }
+
+    public void SetLEDLightLerpTime(float lerp)
+    {
+        lerpTime = lerp;
+    }
+
+    public void SetLEDLightLightStage(LightStage stage)
+    {
+        currentStage = stage;
     }
 }

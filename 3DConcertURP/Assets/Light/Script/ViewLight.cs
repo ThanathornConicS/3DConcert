@@ -23,6 +23,7 @@ public class ViewLight : MonoBehaviour
     // TO-DO: Don't forfet to add speed for this two
     private int colorIndex = 0;
     private float t = 0.0f;
+    private float allLightNumber = 10.0f;
 
     private bool startFade = true;
     private bool startRainbowWave = false;
@@ -41,7 +42,7 @@ public class ViewLight : MonoBehaviour
             turnOff = true;
         }
 
-        t = lightNumber / 10.0f;
+        t = lightNumber / allLightNumber;
     }
     
     // Update is called once per frame
@@ -95,7 +96,7 @@ public class ViewLight : MonoBehaviour
         if(startRainbowWave == true)
         {
             colorIndex = 0;
-            t = lightNumber / 10.0f;
+            t = lightNumber / allLightNumber;
 
             startRainbowWave = false;
         }
@@ -119,7 +120,7 @@ public class ViewLight : MonoBehaviour
         if(startFade == true)
         {
             colorIndex = 0;
-            t = lightNumber / 10.0f;
+            t = lightNumber / allLightNumber;
 
             startFade = false;
         }
@@ -149,7 +150,7 @@ public class ViewLight : MonoBehaviour
             turnOff = false;
         }
 
-        t = lightNumber / 10.0f;
+        t = lightNumber / allLightNumber;
     }
 
     public void SetRestartFade()
@@ -160,5 +161,11 @@ public class ViewLight : MonoBehaviour
     public void SetRestartRainbowWave()
     {
         startRainbowWave = true;
+    }
+
+    public void SetAllLightNumber(float num)
+    {
+        allLightNumber = num;
+        t = lightNumber / allLightNumber;
     }
 }
