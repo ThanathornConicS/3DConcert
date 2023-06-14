@@ -9,12 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebb25b5262008f44b99252759b4caed1, type: 3}
-  m_Name: narrow_gradient_track
+  m_Script: {fileID: 11500000, guid: 9eaad1da5a69c4dbfbc7ccb4bcb08e95, type: 3}
+  m_Name: LEDs_cowardly
   m_EditorClassIdentifier: 
-  mEventID: 
-  mEventList: []
-  _SerializedPayloadTypes: []
+  mEventID: LEDs
+  mEventList:
+  - mStartSample: 44100
+    mEndSample: 44100
+  - mStartSample: 10936800
+    mEndSample: 10936800
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -29,7 +34,11 @@ MonoBehaviour:
   _IntPayloadIdxs: 
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
-  _TextPayloads: []
-  _TextPayloadIdxs: 
+  _TextPayloads:
+  - mTextVal: fade
+  - mTextVal: n
+  _TextPayloadIdxs: 0000000001000000
   _LightsPayloads: []
   _LightsPayloadIdxs: 
+  _MaterialPayloads: []
+  _MaterialPayloadIdxs: 
