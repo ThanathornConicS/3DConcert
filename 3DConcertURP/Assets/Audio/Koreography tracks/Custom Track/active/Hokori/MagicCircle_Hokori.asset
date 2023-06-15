@@ -15,8 +15,13 @@ MonoBehaviour:
   mEventID: magic
   mEventList:
   - mStartSample: 154350
+    mEndSample: 154350
+  - mStartSample: 154350
+    mEndSample: 1036350
+  - mStartSample: 1036350
     mEndSample: 1036350
   _SerializedPayloadTypes:
+  - SonicBloom.Koreo.IntPayload
   - SonicBloom.Koreo.CurvePayload
   _AssetPayloads: []
   _AssetPayloadIdxs: 
@@ -47,13 +52,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  _CurvePayloadIdxs: 00000000
+  _CurvePayloadIdxs: 01000000
   _FloatPayloads: []
   _FloatPayloadIdxs: 
   _GradientPayloads: []
   _GradientPayloadIdxs: 
-  _IntPayloads: []
-  _IntPayloadIdxs: 
+  _IntPayloads:
+  - mIntVal: 5
+  - mIntVal: 5
+  _IntPayloadIdxs: 0000000002000000
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads: []
