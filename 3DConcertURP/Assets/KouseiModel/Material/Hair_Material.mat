@@ -137,7 +137,7 @@ Material:
     - _Gradient_Offset: 0
     - _Inverse_Colors: 0
     - _LightAttenuation: 1.53
-    - _LightIntesity: 1
+    - _LightIntesity: 1.16
     - _LightMapAttenuation: 0.06
     - _LightTonesColor1Range: 0.105
     - _LightTonesColor2Range: 0.031
@@ -150,7 +150,7 @@ Material:
     - _Metallic: 0
     - _OcclusionPower: 1
     - _OcclusionStrength: 1
-    - _OutlineThickness: 0.00015
+    - _OutlineThickness: 0.0001
     - _Parallax: 0.005
     - _Preview_X: 0
     - _Preview_Y: 0
@@ -206,7 +206,7 @@ Material:
     - _GColor_2: {r: 0, g: 0, b: 0, a: 0}
     - _LightTonesColor1: {r: 1, g: 1, b: 1, a: 1}
     - _LightTonesColor2: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.11016673, g: 0.06242434, b: 0.1981132, a: 1}
     - _RimColor: {r: 0.79129815, g: 0.10946172, b: 0.75294244, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _SpecularTint: {r: 1, g: 1, b: 1, a: 1}
