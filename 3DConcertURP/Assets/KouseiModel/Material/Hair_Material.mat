@@ -119,8 +119,8 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DarkTonesColor1Range: 0.154
-    - _DarkTonesColor2Range: 0.052
+    - _DarkTonesColor1Range: 0.106
+    - _DarkTonesColor2Range: 0.084
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -138,9 +138,9 @@ Material:
     - _Inverse_Colors: 0
     - _LightAttenuation: 1.53
     - _LightIntesity: 1
-    - _LightMapAttenuation: 1.16
-    - _LightTonesColor1Range: 0.042
-    - _LightTonesColor2Range: 0.063
+    - _LightMapAttenuation: 0.06
+    - _LightTonesColor1Range: 0.105
+    - _LightTonesColor2Range: 0.031
     - _MAIN_LIGHT_SHADOWS: 1
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
     - _MainLightMidPoint: 0.57
@@ -180,8 +180,8 @@ Material:
     - _Specular_Hide_On_Shadows: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _ToonRampColor1Range: 0.018
-    - _ToonRampColor2Range: 0.231
+    - _ToonRampColor1Range: 0.035
+    - _ToonRampColor2Range: 0.151
     - _WorkflowMode: 1
     - _X_Modifier: 0
     - _X_Offset: 0

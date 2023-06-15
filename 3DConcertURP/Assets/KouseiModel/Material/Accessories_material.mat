@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LightMap:
-        m_Texture: {fileID: 2800000, guid: 917eaf741e438d7468b04985ef20a095, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d6836571b7529f44b9a7731c06e8fc2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

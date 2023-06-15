@@ -15,14 +15,14 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   shadows:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_OverrideState: 1
+    m_Value: {x: 0.98159605, y: 1, z: 0.9772001, w: 0.03294893}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0.84983206, y: 0.90138793, z: 1, w: 0.038350914}
+    m_Value: {x: 0.9092752, y: 1, z: 0.8754736, w: 0.054825377}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9294683, z: 0.7738811, w: 0}
+    m_Value: {x: 0.9610136, y: 0.9489834, z: 1, w: -0.049423385}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
@@ -39,6 +39,29 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
     min: 0
+--- !u!114 &-6989560544957812251
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9860578, z: 0.986057, w: -0.015885625}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.17474185}
+  gain:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0.04765686}
 --- !u!114 &-6859788451005449137
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -112,6 +135,23 @@ MonoBehaviour:
     m_Value: 1.1
     min: 0.01
     max: 5
+--- !u!114 &-4209004817548122255
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-2765675633263764420
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -195,6 +235,8 @@ MonoBehaviour:
   - {fileID: -6859788451005449137}
   - {fileID: 3580686788876890352}
   - {fileID: -4220751829626176952}
+  - {fileID: -4209004817548122255}
+  - {fileID: -6989560544957812251}
 --- !u!114 &2231518069666341896
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -211,12 +253,12 @@ MonoBehaviour:
   m_AdvancedMode: 0
   temperature:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: -4.7
     min: -100
     max: 100
   tint:
-    m_OverrideState: 0
-    m_Value: 15
+    m_OverrideState: 1
+    m_Value: 24
     min: -100
     max: 100
 --- !u!114 &3300411801239203730
@@ -235,7 +277,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.72
+    m_Value: 0.6
     min: 0
   intensity:
     m_OverrideState: 1
@@ -243,7 +285,7 @@ MonoBehaviour:
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.713
+    m_Value: 0.541
     min: 0
     max: 1
   clamp:
@@ -287,10 +329,10 @@ MonoBehaviour:
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
-    m_Value: -0.39
+    m_Value: -0.19
   contrast:
     m_OverrideState: 1
-    m_Value: -3
+    m_Value: -10.19
     min: -100
     max: 100
   colorFilter:
