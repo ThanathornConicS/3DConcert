@@ -21,12 +21,18 @@ namespace SonicBloom.Koreo.Demos
         [MinMaxSlider(-50.0f, 60.0f)]
         public Vector2 minMaxAngle;
 
+        [Foldout("Fanning Settings")]
+        [MinMaxSlider(-50.0f, 60.0f)]
+        public Vector2 minMaxFan;
+
         /// <summary>
         /// Angle difference between the current and previous laser when the wave pattern is played.
         /// </summary>
         [Foldout("Wave Settings")]
         [SerializeField]
         float offsetAngle = 5.0f;
+
+        float fanOffset = 2.0f;
 
         [HorizontalLine(color: EColor.Yellow)]
 
@@ -56,6 +62,8 @@ namespace SonicBloom.Koreo.Demos
         {
             Koreographer.Instance.RegisterForEventsWithTime(eventMovement, LaserMovement);
             controller = gameObject.GetComponent<LaserController>();
+
+            minMaxFan = new Vector2(-50.0f, 50.0f);
 
             //Init dimming array
             sourceMaxArr = new float[controller.lasersNum];
@@ -98,14 +106,12 @@ namespace SonicBloom.Koreo.Demos
                     Wave(curveValue);
                 else if (pattern == "lean")
                     FrontBackLean(curveValue);
-                else if (pattern == "fanL")
+                else if (pattern == "fanL" || pattern == "fanR")
                     FanningSideL(curveValue);
-                else if (pattern == "fanR")
-                    FanningSideR(curveValue);
                 else if (pattern == "dimming")
                     DimmingPattern(curveValue);
-                else
-                    Debug.Log("Laser: String doesn't match parameter names.");
+                //else
+                //    Debug.Log("Laser: String doesn't match parameter names: " + pattern);
                 //transform.localScale = Vector3.one * Mathf.Lerp(minScale, maxScale, curveValue);
             }
 
@@ -128,31 +134,22 @@ namespace SonicBloom.Koreo.Demos
                     //force fan before lean
                     ////Space between each lasesr is 18 degree
                     ////starting angle 90
-                    //float angle = 90.0f;
-                    //float increment = 15.0f;
-                    //float finalRot = 0.0f;
+                    float angle = 90.0f;
+                    float increment = 15.0f;
+                    float finalRot = 0.0f;
 
-                    //for (int i = 0; i < controller.lasersNum; i++)
-                    //{
-                    //    //calculate final rotation value
-                    //    finalRot = angle - (increment * (i + 1));
+                    for (int i = 0; i < controller.lasersNum; i++)
+                    {
+                        //calculate final rotation value
+                        finalRot = angle - (increment * (i + 1));
 
-                    //    //Left
-                    //    controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
-                    //        (controller.LaserbeamsL[i].transform.localEulerAngles.x,
-                    //        Mathf.Lerp(0, finalRot, 1.0f),
-                    //        controller.LaserbeamsL[i].transform.localEulerAngles.z);
-                    //}
+                        //Left
+                        controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
+                            (controller.LaserbeamsL[i].transform.localEulerAngles.x,
+                            Mathf.Lerp(0, finalRot, 1.0f),
+                            controller.LaserbeamsL[i].transform.localEulerAngles.z);
+                    }
                 }
-                else if (pattern == "fanL")
-                {
-                    Debug.Log("Text: fanL");
-                }
-                else if (pattern == "fanR")
-                {
-                    Debug.Log("Text: fanR");
-                }
-
             }
         }
 
@@ -203,33 +200,22 @@ namespace SonicBloom.Koreo.Demos
 
         void FanningSideL(float t)
         {
-            //right angle.y = -40
-            //left  angle.x = 40
-            for (int i = 0; i < controller.lasersNum; i++) 
+            float offsetInterval = angleToOffset(fanOffset, minMaxFan.x, minMaxFan.y);
+            for (int i = 0; i < controller.lasersNum; i++)
             {
-                controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
-                (controller.LaserbeamsL[i].transform.localEulerAngles.x,
-                 Mathf.Lerp(-40.0f - ((controller.lasersNum - i)*3), 40.0f + (i*3), (t * ((float)controller.lasersNum / (i + 1.0f)))),
-                 controller.LaserbeamsL[i].transform.localEulerAngles.z);
+                float interval = (t - (i * offsetInterval)) % 1.0f;
+                if (interval < 0.0f) interval += 1.0f;
 
-                //Debug.Log("i: " + i + " " + Mathf.Lerp(-40.0f, 40.0f, (t * (controller.lasersNum / (i + 1)))));
+                //if(i == 0) Debug.Log(calcInterval(interval));
+
+                float tmp = Mathf.Lerp(minMaxFan.x, minMaxFan.y, calcInterval(interval));
+                controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3(
+                    controller.LaserbeamsL[i].transform.localEulerAngles.x,
+                    tmp,
+                    controller.LaserbeamsL[i].transform.localEulerAngles.z
+                    );
             }
-            //Debug.Log("fanning L");
 
-        }
-
-        void FanningSideR(float t)
-        {
-            //right angle.y = -40
-            //left  angle.x = 40
-            for (int i = controller.lasersNum - 1; i >= 0; i--)
-            {
-                controller.LaserbeamsL[i].transform.localEulerAngles = new Vector3
-                (controller.LaserbeamsL[i].transform.localEulerAngles.x,
-                 Mathf.Lerp(40.0f + (i * 3), -40.0f - ((controller.lasersNum - i) * 3), (t * ((float)controller.lasersNum / (controller.lasersNum - i)))),
-                 controller.LaserbeamsL[i].transform.localEulerAngles.z);
-            }
-            //Debug.Log("fanning R");
         }
 
         void FrontBackLean(float t)
@@ -243,6 +229,11 @@ namespace SonicBloom.Koreo.Demos
         float calcInterval(float t)
         {
             return (Mathf.Sin(Mathf.PI * (2 * t - 1)) + 1) * 0.5f;
+        }
+
+        float calcIntervalR(float t)
+        {
+            return (Mathf.Cos(Mathf.PI * (2 * t - 1)) + 1) * 0.5f;
         }
         //for Wave pattern
         float angleToOffset(float degOffset, float degMin, float degMax)
