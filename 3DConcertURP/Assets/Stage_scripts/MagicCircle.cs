@@ -26,6 +26,9 @@ namespace SonicBloom.Koreo.Demos
         [SerializeField]
         Light[] SP;
 
+        [SerializeField]
+        Animator m_animator;
+        
         float t;
         Vector3 newPos;
         Vector3 originalPos;
@@ -65,6 +68,14 @@ namespace SonicBloom.Koreo.Demos
 
                 //set new position
                 this.transform.position = newPos;
+
+                if (t >= 0.999f)
+                {
+                    DetatchMagicCircle();
+                    //animation: shrink magic circle
+                    m_animator.SetTrigger("Shrink");
+                    Debug.Log("Start shrink");
+                }
             }
         }
 
