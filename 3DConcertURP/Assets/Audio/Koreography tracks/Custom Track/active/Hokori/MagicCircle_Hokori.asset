@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: magic
   mEventList:
-  - mStartSample: 154350
-    mEndSample: 154350
-  - mStartSample: 154350
-    mEndSample: 1036350
-  - mStartSample: 1036350
-    mEndSample: 1036350
+  - mStartSample: 88200
+    mEndSample: 88200
+  - mStartSample: 88200
+    mEndSample: 970200
+  - mStartSample: 970200
+    mEndSample: 970200
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.IntPayload
   - SonicBloom.Koreo.CurvePayload
