@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: Hokori
   m_EditorClassIdentifier: 
-  mSourceClip: {fileID: 8300000, guid: b617e371d627f4c4ea53fd7b7b1420ec, type: 3}
+  mSourceClip: {fileID: 8300000, guid: 6b5ef4e0d9bfc6f4e99d49ee6c7156e0, type: 3}
   mAudioFilePath: 
   mSampleRate: 44100
   mIgnoreLatencyOffset: 0

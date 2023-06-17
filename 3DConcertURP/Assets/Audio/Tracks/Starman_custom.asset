@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: Starman_custom
   m_EditorClassIdentifier: 
-  mSourceClip: {fileID: 8300000, guid: 09d6068ded6bb1e4a99c136c20cd7291, type: 3}
+  mSourceClip: {fileID: 8300000, guid: fada7cea28f38ea4480edf2190f96896, type: 3}
   mAudioFilePath: 
   mSampleRate: 48000
   mIgnoreLatencyOffset: 0
