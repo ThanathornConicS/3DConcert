@@ -39,12 +39,12 @@ namespace SonicBloom.Koreo.Demos
         {
             Koreographer.Instance.RegisterForEventsWithTime(eventMagicCircle, MagicEvent);
             Koreographer.Instance.RegisterForEventsWithTime(eventSPLights, FadeEvent);
-            AttachMagicCircle();
+            //AttachMagicCircle();
             originalPos = this.transform.position;
 
             originalIntensity = SP[0].intensity;
         }
-
+        
         void FadeEvent(KoreographyEvent evt, int sampleTime, int sampleDelta, DeltaSlice deltaSlice)
         {
             if (evt.HasCurvePayload())
