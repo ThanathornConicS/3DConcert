@@ -170,17 +170,6 @@ public class @ControlScheme : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""3897fa69-4ca0-4dad-90dd-76a394ebde4d"",
-                    ""path"": ""<Keyboard>/5"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchToCam5"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""7053217b-baf4-4699-bee7-04fe653a30aa"",
                     ""path"": ""<Keyboard>/6"",
                     ""interactions"": """",
@@ -264,6 +253,17 @@ public class @ControlScheme : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""SetFreeCamTo6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3897fa69-4ca0-4dad-90dd-76a394ebde4d"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchToCam5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }

@@ -58,11 +58,22 @@ public class CamSwitcher : MonoBehaviour
     [Dropdown("cameraValues")]
     public int cameraValue;
 
-    [SerializeField] private List<int> cameraValues/* = new int[] { 1, 2, 3, 4, 5, 6, 7}*/;
+    [SerializeField] private List<int> cameraValues
+    {
+        get { return new List<int>() {0, 1, 2, 3, 4, 5, 6}; }
+    }
 
     private void Awake()
     {
         _controlScheme = new ControlScheme();
+    }
+
+    private void Start()
+    {
+        if (_controlScheme == null)
+        {   
+            Debug.Log("It's fucking null.");
+        }
     }
 
     private void OnEnable()
@@ -188,6 +199,7 @@ public class CamSwitcher : MonoBehaviour
 
         CameraTransforms[idx].position = CameraTransforms[0].position;
         virtualCameras[idx].transform.rotation = virtualCameras[0].transform.rotation;
+        Debug.Log("Cam setted." + idx);
     }
     [Button]
     public void SetCameraFromFreeCam() 
